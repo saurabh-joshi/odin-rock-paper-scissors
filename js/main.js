@@ -1,4 +1,3 @@
-// below function is complete and optimized
 function getComputerChoice (){
     let result = Math.random()
     return result <= 0.33 ? 'rock' : result <= 0.66 ? 'paper' : 'scissor'
@@ -9,9 +8,6 @@ let playerScore = 0;
 
 function playRound (computerSelection, playerSelection){
     let playerSelectionLC = playerSelection.toLowerCase()
-    // console.log(`Computer->${computerSelection}, Player->${playerSelectionLC}`)
-    
-    
     if (playerSelectionLC === 'rock') {
         if(computerSelection === 'rock') {
             return 'Tie! Rock vs Rock';
